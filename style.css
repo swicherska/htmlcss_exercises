@@ -1,0 +1,72 @@
+html, body {
+  background-color: #f5ffd8;
+}
+.container {
+  width: 500px;
+  height: 500px;
+  border: solid;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+
+
+#box {
+  background-color:#99FF99;
+  padding: 15px; 
+  margin: 10px 0px 0px 20px; 
+  width: 95px; 
+  height: 95px;
+  animation: animacja 5s ease 2s infinite alternate none;  
+  border-radius: 10px;
+}
+
+@keyframes animacja {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+  25%  {background-color: #99CCFF;}
+  50%  {background-color: #FFCCCC;}
+  75%  {background-color: #FFFF99;}
+}
+
+#box2 {
+  background-color:#FF99FF;
+  padding: 15px; 
+  margin: 30px 0px 0px 20px; 
+  width: 95px; 
+  height: 95px;
+  border-radius: 10px 0px;
+  animation: animacja2 5s ease infinite alternate none;
+  
+}
+
+@keyframes animacja2 {
+
+  0%  {margin-left: 0%; background-color: #99CCFF;}
+  25%  {margin-left: 5%; background-color: #99CCFF;}
+  50%  {margin-left: 15%; background-color: #99CCFF;}
+  75%  {margin-left: 30%; background-color: #FFCCCC;}
+  100%  {margin-left: 60%; background-color: #FFFF99;}
+}
+
+
+
+.box3 {
+  background-color:#FF99FF;
+  padding: 15px; 
+  margin: 10px 0px 0px 30px; 
+  width: 95px; 
+  height: 95px;
+  border-radius: 10px 0px;
+  align-self: flex-end;
+  transition-property: width;
+  transition-duration: 3s;
+}
+
+.box3:hover {
+  width: 150px;
+  background-color: #99CCFF;
+}
+
