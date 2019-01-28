@@ -11,6 +11,10 @@ html, body {
   align-content: flex-start;
 }
 
+.megacontainer {
+ display: flex;
+ flex-direction:row;
+}
 
 
 #box {
